@@ -1,0 +1,11 @@
+{
+    "batch_size":5000,
+    "threads":50,
+
+    "log_level": 1,
+
+    "base_url": "https://sites.google.com/<school_domain>",
+    "cookies": {
+        "example_cookie": "chocolate_chip"
+    }
+}
