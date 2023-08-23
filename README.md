@@ -4,7 +4,7 @@ This application scans for user pages on a domain. Created for finding  student 
 
 ## Overview
 
-The scanner works by generating random first and last name combinations, appending "portfolio" and trying them as page URLs on the target domain. Any 200 responses are logged as potential portfolio pages.
+The scanner works by generating random first and last name combinations, appending "portfolio" and trying them as page URLs on the target domain. Any responses that are not 404 are logged as potential portfolio pages.
 
 The scanner uses a configurable number of threads to send requests in parallel for faster scanning. Pages already tried are tracked in a text file to avoid duplicates.
 
@@ -20,10 +20,10 @@ The `config.json` file contains the following settings:
 - `batch_size` - Number of random pages to try per batch
 - `threads` - Number of concurrent requests to make
 - `log_level` - Logging level 
-  - 0 - None
-  - 1 - Found pages
-  - 2 - Found pages + stats
-  - 3 - Found pages + stats + progress bars
+  - `0` - None
+  - `1` - Found pages
+  - `2` - Found pages + stats
+  - `3` - Found pages + stats + progress bars
 
 
 #### Example `config.json`
