@@ -44,7 +44,7 @@ The `config.json` file contains the following settings:
 ```
 
 ### Names
-The `first_names.txt` and `last_names.txt` files should be populated with first and last names, separated by new lines, to use for generating page names.
+The `first_names.txt` and `last_names.txt` files are required and should be populated with first and last names, separated by new lines, to use for generating page names.
 
 
 
